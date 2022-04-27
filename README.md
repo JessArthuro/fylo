@@ -1,5 +1,6 @@
 <div align="center">
-  
+  <br />
+
   <img src="./readme-images/logo.png" />
 
   <h2 align="center">Fylo - Landing Page</h2>
