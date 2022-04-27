@@ -439,23 +439,24 @@ button {
     gap: 20px;
   }
   .intro .content .intro-img {
-    max-width: 265px;
+    max-width: 285px;
+    margin: 40px 0;
   }
   .intro .content .txt-content .title {
-    font-size: 26px;
+    font-size: 24px;
   }
   .intro .content .txt-content .description {
-    max-width: 380px;
+    max-width: 345px;
   }
   .about .about-ilustration {
     text-align: center;
   }
   .about .about-ilustration .about-img {
-    max-width: 280px;
-    margin-bottom: 20px;
+    max-width: 320px;
+    margin-bottom: 35px;
   }
   .about .about-txt .title-about {
-    font-size: 24px;
+    font-size: 22px;
     text-align: center;
   }
   .about .about-txt .title-about br {
@@ -492,7 +493,7 @@ button {
     padding: 10px 0;
   }
   .footer .footer-content .logo-footer {
-    width: 130px;
+    width: 110px;
     padding-left: 10px;
   }
   .footer .footer-content .links1,

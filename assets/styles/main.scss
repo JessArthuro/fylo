@@ -79,16 +79,18 @@ button {
     .intro {
         .content {
             .intro-img {
-                max-width: 265px;
+                max-width: 285px;
+                // margin-top: 50px;
+                margin: 40px 0;
             }
 
             .txt-content {
                 .title {
-                    font-size: 26px;
+                    font-size: 24px;
                 }
 
                 .description {
-                    max-width: 380px;
+                    max-width: 345px;
                 }
             }
         }
@@ -99,14 +101,14 @@ button {
             text-align: center;
 
             .about-img {
-                max-width: 280px;
-                margin-bottom: 20px;
+                max-width: 320px;
+                margin-bottom: 35px;
             }
         }
 
         .about-txt {
             .title-about {
-                font-size: 24px;
+                font-size: 22px;
                 text-align: center;
 
                 br {
@@ -154,7 +156,7 @@ button {
 
         .footer-content {
             .logo-footer {
-                width: 130px;
+                width: 110px;
                 padding-left: 10px;
             }
 
