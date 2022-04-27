@@ -1,0 +1,394 @@
+// Fonts Open Sans & Raleway 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+:root {
+    // Primary Colors 
+    --intro-email-bg: hsl(217, 28%, 15%);
+    --main-bg: hsl(218, 28%, 13%);
+    --testimonials-bg: hsl(219, 30%, 18%);
+    --footer-bg: hsl(216, 53%, 9%);
+
+    // Accent Colors
+    --cyan: hsl(176, 68%, 64%);
+    --blue: hsl(198, 60%, 50%);
+    --light-red: hsl(0, 100%, 63%);
+
+    // Neutral Color
+    --white: hsl(0, 0%, 100%);
+
+    // Typography
+    --ff-body: 'Open Sans', sans-serif;
+    --ff-headings: 'Raleway', sans-serif;
+}
+
+body {
+    background-color: var(--main-bg);
+    font-family: var(--ff-body);
+    color: var(--white);
+}
+
+
+// --- Reset ---
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    outline: none;
+}
+
+
+// --- Btn-started ---
+.started {
+    background-image: linear-gradient(to right, hsl(176, 68%, 64%) 0%, 
+    hsl(198, 60%, 50%) 51%, hsl(176, 68%, 64%) 100%);
+    padding: 12px 50px;
+    border-radius: 25px;
+    color: var(--white);
+    font-weight: 600;
+    font-size: 14px;
+    background-size: 200% auto;
+    
+    &:hover {
+        filter: drop-shadow(0 0 4px var(--blue));
+        // background-position: right center;
+    }
+}
+
+
+// --- Imports --- 
+@import "./navbar";
+@import "./intro";
+@import "./features";
+@import "./about";
+@import "./testimonials";
+@import "./footer";
+
+
+// --- Breakpoints ---
+@media screen and (max-width: 450px) {
+    .navbar {
+        padding: 25px;
+
+        .navbar-links {
+            gap: 20px;
+        }
+    }
+
+    .intro {
+        .content {
+            .intro-img {
+                max-width: 265px;
+            }
+
+            .txt-content {
+                .title {
+                    font-size: 26px;
+                }
+
+                .description {
+                    max-width: 380px;
+                }
+            }
+        }
+    }
+
+    .about {
+        .about-ilustration {
+            text-align: center;
+
+            .about-img {
+                max-width: 280px;
+                margin-bottom: 20px;
+            }
+        }
+
+        .about-txt {
+            .title-about {
+                font-size: 24px;
+                text-align: center;
+
+                br {
+                    display: none;
+                }
+            }
+        } 
+    }
+    
+    .testimonials {
+        .testimonial-content {
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+        }
+    } 
+
+    .footer {
+        .email-signup {
+            max-width: 350px;
+            top: -145px;
+
+            .content {
+                padding: 25px 20px;
+
+                .title {
+                    font-size: 22px;
+                }
+
+                .buttons {
+                    .input-email {
+                        width: 100%;
+                        padding: 10px 0;
+                        padding-left: 20px;
+                        margin-bottom: 15px;
+                    }
+
+                    .started {
+                        width: 100%;
+                        padding: 10px 0;
+                    }
+                }
+            }
+        }
+
+        .footer-content {
+            .logo-footer {
+                width: 130px;
+                padding-left: 10px;
+            }
+
+            .links1,
+            .links2 {
+                margin-top: 25px;
+            }
+
+            .social {
+                justify-content: center;
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-device-width: 451px) and (max-device-width: 575px) {
+    .navbar {
+        padding: 25px;
+
+        .navbar-links {
+            gap: 35px;
+        }
+    }
+
+    .intro {
+        .content {
+            .txt-content {
+                .title {
+                    font-size: 26px;
+                }
+
+                .description {
+                    max-width: 380px;
+                }
+            }
+        }
+    }
+
+    .about {
+        .about-ilustration {
+            text-align: center;
+
+            .about-img {
+                max-width: 350px;
+                margin-bottom: 20px;
+            }
+        }
+
+        .about-txt {
+            .title-about {
+                font-size: 24px;
+                text-align: center;
+
+                br {
+                    display: none;
+                }
+            }
+        } 
+    }
+
+    .testimonials {
+        .testimonial-content {
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+        }
+    } 
+
+    .footer {
+        .email-signup {
+            max-width: 420px;
+            top: -125px;
+
+            .content {
+                padding: 25px;
+
+                .title {
+                    font-size: 22px;
+                }
+
+                .buttons {
+                    .input-email {
+                        width: 100%;
+                        padding: 10px 0;
+                        padding-left: 20px;
+                        margin-bottom: 15px;
+                    }
+
+                    .started {
+                        width: 100%;
+                        padding: 10px 0;
+                    }
+                }
+            }
+        }
+
+        .footer-content {
+            .logo-footer {
+                width: 130px;
+                padding-left: 10px;
+            }
+
+            .links1,
+            .links2 {
+                margin-top: 25px;
+            }
+
+            .social {
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@media only screen and (min-device-width: 576px) and (max-device-width: 768px) {
+    .navbar .navbar-links {
+        gap: 45px;
+    }
+
+    .features {
+        .content {
+            max-width: 450px;
+
+            .feature-item {
+                width: 420px;
+            }
+        }
+    }
+
+    .about {
+        .about-ilustration {
+            text-align: center;
+
+            .about-img {
+                max-width: 400px;
+                margin-bottom: 20px;
+            }
+        }
+
+        .about-txt .title-about br {
+            display: none;
+        }
+    }
+
+    .testimonials {
+        .testimonial-content {
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+        }
+    } 
+    
+    .footer {
+        .email-signup {
+            max-width: 500px;
+
+            .content {
+                padding: 30px;
+
+                .title {
+                    font-size: 25px;
+                }
+
+                .buttons {
+                    .input-email {
+                        width: 240px;
+                    }
+
+                    .started {
+                        padding: 12px 20px;
+                    }
+                }
+            }
+        }
+
+        .footer-content {
+            .logo-footer {
+                margin: auto;
+                margin-top: 20px;
+                margin-bottom: 25px;
+            }
+    
+            .links1,
+            .links2 {
+                margin-top: 6px;
+            }
+    
+            .social {
+                justify-content: center;
+            }
+        } 
+    } 
+}
+
+
+@media only screen and (min-device-width: 769px) and (max-device-width: 991px) {
+    .navbar .navbar-links {
+        gap: 50px;
+    }
+
+    .features {
+        .content {
+            max-width: 650px;
+
+            .feature-item {
+                width: 300px;
+            }
+        }
+    }
+
+    .about .about-ilustration .about-img {
+        max-width: 340px;
+    }
+
+    .footer {
+        .footer-content {
+            .footer-link.phone-email {
+                font-size: 14px;
+            }
+
+            .social .social-link {
+                width: 26px; height: 26px;
+
+                .icon-social {
+                    font-size: 13px;
+                }
+            }
+        } 
+    }
+}
+
+@media only screen and (min-device-width: 992px) and (max-device-width: 1200px) {
+    .about .about-ilustration .about-img {
+        width: 450px;
+    }
+}

@@ -1,0 +1,50 @@
+.about {
+    padding: 80px 0;
+
+    .about-ilustration {
+        text-align: start;
+
+        .about-img {
+            width: 500px;
+        }
+    }
+
+    .about-txt {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+
+        .title-about {
+            font-family: var(--ff-headings);
+            font-weight: 700;
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .data1,
+        .data2 {
+            opacity: .8;
+            font-size: 15px;
+        }
+
+        .btn-works {
+            color: var(--cyan);
+            padding-bottom: 5px;
+            font-size: 15px;
+            width: 160px;
+            border-bottom: 1px solid var(--cyan);
+
+            .icon-arrow {
+                padding-left: 2px;
+                font-size: 14px;
+            }
+
+            &:hover {
+                color: var(--white);
+                border-bottom: 1px solid var(--white);
+            }
+        }
+
+    }
+}

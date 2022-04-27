@@ -1,0 +1,672 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
+:root {
+  --intro-email-bg: hsl(217, 28%, 15%);
+  --main-bg: hsl(218, 28%, 13%);
+  --testimonials-bg: hsl(219, 30%, 18%);
+  --footer-bg: hsl(216, 53%, 9%);
+  --cyan: hsl(176, 68%, 64%);
+  --blue: hsl(198, 60%, 50%);
+  --light-red: hsl(0, 100%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --ff-body: 'Open Sans', sans-serif;
+  --ff-headings: 'Raleway', sans-serif;
+}
+
+body {
+  background-color: var(--main-bg);
+  font-family: var(--ff-body);
+  color: var(--white);
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+.started {
+  background-image: -webkit-gradient(linear, left top, right top, from(#65e2d9), color-stop(51%, #339ecc), to(#65e2d9));
+  background-image: linear-gradient(to right, #65e2d9 0%, #339ecc 51%, #65e2d9 100%);
+  padding: 12px 50px;
+  border-radius: 25px;
+  color: var(--white);
+  font-weight: 600;
+  font-size: 14px;
+  background-size: 200% auto;
+}
+
+.started:hover {
+  -webkit-filter: drop-shadow(0 0 4px var(--blue));
+          filter: drop-shadow(0 0 4px var(--blue));
+}
+
+.navbar {
+  padding: 25px 45px;
+  font-family: var(--ff-headings);
+  background-color: var(--intro-email-bg);
+}
+
+.navbar .navbar-brand .logo {
+  width: 100px;
+}
+
+.navbar .navbar-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 60px;
+  font-size: 15px;
+}
+
+.navbar .navbar-links .navbar-link {
+  color: var(--white);
+  opacity: .6;
+}
+
+.navbar .navbar-links .navbar-link:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.intro {
+  background-color: var(--intro-email-bg);
+  background-image: url(../img/bg-curvy-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 120% 50%;
+}
+
+.intro .content {
+  text-align: center;
+}
+
+.intro .content .intro-img {
+  max-width: 350px;
+  margin-bottom: 30px;
+}
+
+.intro .content .txt-content {
+  max-width: 600px;
+  margin: auto;
+}
+
+.intro .content .txt-content .title {
+  font-family: var(--ff-headings);
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.intro .content .txt-content .description {
+  max-width: 420px;
+  margin: auto;
+  font-size: 14px;
+  margin-bottom: 20px;
+  opacity: .8;
+}
+
+.intro .content .txt-content .started {
+  margin-bottom: 85px;
+}
+
+.features {
+  margin-bottom: 45px;
+}
+
+.features .content {
+  max-width: 800px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
+  text-align: center;
+}
+
+.features .content .feature-item {
+  width: 350px;
+  margin-top: 40px;
+}
+
+.features .content .feature-item .feature-img {
+  height: 70px;
+  margin-bottom: 15px;
+}
+
+.features .content .feature-item .feature-title {
+  font-family: var(--ff-headings);
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.features .content .feature-item .feature-description {
+  font-size: 13px;
+  opacity: .8;
+}
+
+.about {
+  padding: 80px 0;
+}
+
+.about .about-ilustration {
+  text-align: start;
+}
+
+.about .about-ilustration .about-img {
+  width: 500px;
+}
+
+.about .about-txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about .about-txt .title-about {
+  font-family: var(--ff-headings);
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.about .about-txt .data1,
+.about .about-txt .data2 {
+  opacity: .8;
+  font-size: 15px;
+}
+
+.about .about-txt .btn-works {
+  color: var(--cyan);
+  padding-bottom: 5px;
+  font-size: 15px;
+  width: 160px;
+  border-bottom: 1px solid var(--cyan);
+}
+
+.about .about-txt .btn-works .icon-arrow {
+  padding-left: 2px;
+  font-size: 14px;
+}
+
+.about .about-txt .btn-works:hover {
+  color: var(--white);
+  border-bottom: 1px solid var(--white);
+}
+
+.testimonials {
+  margin: 60px 0 220px;
+}
+
+.testimonials .testimonial-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  padding: 30px;
+  position: relative;
+}
+
+.testimonials .testimonial-content .quotes-icon {
+  position: absolute;
+  width: 50px;
+  top: -5px;
+  left: 22px;
+  z-index: -10;
+}
+
+.testimonials .testimonial-content .testimonial-item {
+  background-color: var(--testimonials-bg);
+  padding: 35px 25px 15px;
+  border-radius: 8px;
+}
+
+.testimonials .testimonial-content .testimonial-item .copy {
+  font-size: 13px;
+  opacity: .8;
+}
+
+.testimonials .testimonial-content .testimonial-item .info-testimonial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+}
+
+.testimonials .testimonial-content .testimonial-item .info-testimonial .profile-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.testimonials .testimonial-content .testimonial-item .info-testimonial .details-user .name {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.testimonials .testimonial-content .testimonial-item .info-testimonial .details-user .profession {
+  font-size: 9px;
+}
+
+.footer {
+  background-color: var(--footer-bg);
+  position: relative;
+}
+
+.footer .email-signup {
+  max-width: 750px;
+  background-color: var(--intro-email-bg);
+  position: absolute;
+  top: -100px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.footer .email-signup .content {
+  padding: 30px 60px;
+}
+
+.footer .email-signup .content .title {
+  font-family: var(--ff-headings);
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.footer .email-signup .content .description {
+  font-size: 13px;
+  opacity: .8;
+  margin-bottom: 20px;
+}
+
+.footer .email-signup .content .buttons .input-email {
+  width: 380px;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  border-radius: 25px;
+  padding: 12px 0;
+  padding-left: 20px;
+  margin-right: 8px;
+}
+
+.footer .email-signup .content .buttons .input-email::-webkit-input-placeholder {
+  opacity: .5;
+}
+
+.footer .email-signup .content .buttons .input-email:-ms-input-placeholder {
+  opacity: .5;
+}
+
+.footer .email-signup .content .buttons .input-email::-ms-input-placeholder {
+  opacity: .5;
+}
+
+.footer .email-signup .content .buttons .input-email::placeholder {
+  opacity: .5;
+}
+
+.footer .email-signup .content .buttons .started {
+  padding: 12px 28px;
+}
+
+.footer .footer-content {
+  padding: 190px 0 10px;
+}
+
+.footer .footer-content .logo-footer {
+  display: block;
+  width: 120px;
+  margin-bottom: 15px;
+}
+
+.footer .footer-content .info-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 15px;
+          column-gap: 15px;
+  opacity: .8;
+  font-size: 15px;
+}
+
+.footer .footer-content .info-footer .icon-map {
+  padding-top: 5px;
+}
+
+.footer .footer-content .footer-link {
+  color: var(--white);
+  opacity: .8;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.footer .footer-content .footer-link:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.footer .footer-content .footer-link .icon-phone,
+.footer .footer-content .footer-link .icon-email {
+  padding-right: 8px;
+}
+
+.footer .footer-content .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  opacity: .8;
+}
+
+.footer .footer-content .social .social-link {
+  border: 1px solid var(--white);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .footer-content .social .social-link .icon-social {
+  color: var(--white);
+  font-size: 14px;
+}
+
+.footer .footer-content .social .social-link:hover {
+  border: 1px solid var(--cyan);
+}
+
+.footer .footer-content .social .social-link:hover .icon-social {
+  color: var(--cyan);
+}
+
+.footer .footer-content .copyright {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 15px;
+  opacity: .8;
+  border-top: 1px solid var(--white);
+  font-size: 15px;
+}
+
+.footer .footer-content .copyright .link-portfolio {
+  color: var(--cyan);
+  font-weight: 700;
+}
+
+.footer .footer-content .copyright .link-portfolio:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 450px) {
+  .navbar {
+    padding: 25px;
+  }
+  .navbar .navbar-links {
+    gap: 20px;
+  }
+  .intro .content .intro-img {
+    max-width: 265px;
+  }
+  .intro .content .txt-content .title {
+    font-size: 26px;
+  }
+  .intro .content .txt-content .description {
+    max-width: 380px;
+  }
+  .about .about-ilustration {
+    text-align: center;
+  }
+  .about .about-ilustration .about-img {
+    max-width: 280px;
+    margin-bottom: 20px;
+  }
+  .about .about-txt .title-about {
+    font-size: 24px;
+    text-align: center;
+  }
+  .about .about-txt .title-about br {
+    display: none;
+  }
+  .testimonials .testimonial-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 20px;
+  }
+  .footer .email-signup {
+    max-width: 350px;
+    top: -145px;
+  }
+  .footer .email-signup .content {
+    padding: 25px 20px;
+  }
+  .footer .email-signup .content .title {
+    font-size: 22px;
+  }
+  .footer .email-signup .content .buttons .input-email {
+    width: 100%;
+    padding: 10px 0;
+    padding-left: 20px;
+    margin-bottom: 15px;
+  }
+  .footer .email-signup .content .buttons .started {
+    width: 100%;
+    padding: 10px 0;
+  }
+  .footer .footer-content .logo-footer {
+    width: 130px;
+    padding-left: 10px;
+  }
+  .footer .footer-content .links1,
+  .footer .footer-content .links2 {
+    margin-top: 25px;
+  }
+  .footer .footer-content .social {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (min-device-width: 451px) and (max-device-width: 575px) {
+  .navbar {
+    padding: 25px;
+  }
+  .navbar .navbar-links {
+    gap: 35px;
+  }
+  .intro .content .txt-content .title {
+    font-size: 26px;
+  }
+  .intro .content .txt-content .description {
+    max-width: 380px;
+  }
+  .about .about-ilustration {
+    text-align: center;
+  }
+  .about .about-ilustration .about-img {
+    max-width: 350px;
+    margin-bottom: 20px;
+  }
+  .about .about-txt .title-about {
+    font-size: 24px;
+    text-align: center;
+  }
+  .about .about-txt .title-about br {
+    display: none;
+  }
+  .testimonials .testimonial-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 20px;
+  }
+  .footer .email-signup {
+    max-width: 420px;
+    top: -125px;
+  }
+  .footer .email-signup .content {
+    padding: 25px;
+  }
+  .footer .email-signup .content .title {
+    font-size: 22px;
+  }
+  .footer .email-signup .content .buttons .input-email {
+    width: 100%;
+    padding: 10px 0;
+    padding-left: 20px;
+    margin-bottom: 15px;
+  }
+  .footer .email-signup .content .buttons .started {
+    width: 100%;
+    padding: 10px 0;
+  }
+  .footer .footer-content .logo-footer {
+    width: 130px;
+    padding-left: 10px;
+  }
+  .footer .footer-content .links1,
+  .footer .footer-content .links2 {
+    margin-top: 25px;
+  }
+  .footer .footer-content .social {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (min-device-width: 576px) and (max-device-width: 768px) {
+  .navbar .navbar-links {
+    gap: 45px;
+  }
+  .features .content {
+    max-width: 450px;
+  }
+  .features .content .feature-item {
+    width: 420px;
+  }
+  .about .about-ilustration {
+    text-align: center;
+  }
+  .about .about-ilustration .about-img {
+    max-width: 400px;
+    margin-bottom: 20px;
+  }
+  .about .about-txt .title-about br {
+    display: none;
+  }
+  .testimonials .testimonial-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 20px;
+  }
+  .footer .email-signup {
+    max-width: 500px;
+  }
+  .footer .email-signup .content {
+    padding: 30px;
+  }
+  .footer .email-signup .content .title {
+    font-size: 25px;
+  }
+  .footer .email-signup .content .buttons .input-email {
+    width: 240px;
+  }
+  .footer .email-signup .content .buttons .started {
+    padding: 12px 20px;
+  }
+  .footer .footer-content .logo-footer {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+  .footer .footer-content .links1,
+  .footer .footer-content .links2 {
+    margin-top: 6px;
+  }
+  .footer .footer-content .social {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (min-device-width: 769px) and (max-device-width: 991px) {
+  .navbar .navbar-links {
+    gap: 50px;
+  }
+  .features .content {
+    max-width: 650px;
+  }
+  .features .content .feature-item {
+    width: 300px;
+  }
+  .about .about-ilustration .about-img {
+    max-width: 340px;
+  }
+  .footer .footer-content .footer-link.phone-email {
+    font-size: 14px;
+  }
+  .footer .footer-content .social .social-link {
+    width: 26px;
+    height: 26px;
+  }
+  .footer .footer-content .social .social-link .icon-social {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (min-device-width: 992px) and (max-device-width: 1200px) {
+  .about .about-ilustration .about-img {
+    width: 450px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

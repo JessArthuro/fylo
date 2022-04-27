@@ -1,0 +1,59 @@
+.intro {
+    background-color: var(--intro-email-bg);
+    background-image: url(../img/bg-curvy-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 120% 50%;
+
+    .content {
+        text-align: center;
+
+        .intro-img {
+            max-width: 350px;
+            margin-bottom: 30px;
+        }
+
+        .txt-content {
+            max-width: 600px;
+            margin: auto;
+
+            .title {
+                font-family: var(--ff-headings);
+                font-weight: 700;
+                font-size: 30px;
+                margin-bottom: 20px;
+            }
+
+            .description {
+                max-width: 420px;
+                margin: auto;
+                font-size: 14px;
+                margin-bottom: 20px;
+                opacity: .8;
+            }
+
+            .started {
+                margin-bottom: 85px;
+            }
+            // .btn-intro {
+            //     background-image: linear-gradient(to right, hsl(176, 68%, 64%) 0%, 
+            //     hsl(198, 60%, 50%) 51%, hsl(176, 68%, 64%) 100%);
+            //     padding: 12px 50px;
+            //     border-radius: 25px;
+            //     color: var(--white);
+            //     font-weight: 700;
+            //     font-size: 14px;
+            //     background-size: 200% auto;
+            //     // transition: .5s;
+            //     // margin-bottom: 85px;
+
+            //     &:hover {
+            //         background-position: right center;
+            //         // transition: .5s ease;
+            //     }
+            // }
+        }
+
+        
+    }
+}
