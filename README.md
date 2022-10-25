@@ -1,18 +1,15 @@
-<div align="center">
-  <br />
+<img src="./readme-images/logo.png" alt="Logo Fylo" height="50" />
 
-  <img src="./readme-images/logo.png" />
+# Fylo - Cloud Storage App
 
-  <h2 align="center">Fylo - Landing Page</h2>
+ This web page is a demo for a cloud storage application. Responsive for all devices, built with HTML, CSS, and JavaScript.
 
-  This web page is a demo for a cloud storage application. <br /> Responsive for all devices, built with HTML, CSS, and JavaScript.
 
-  <a href="https://jessarthuro.github.io/fylo/"><strong>➥ Live Demo</strong></a>
+## Screenshots
 
-</div>
+![Screenshot](./readme-images/screenshot-fylo.png "Desktop and Mobile Screenshot")
 
-<br />
 
-### Demo Screeshots
+## Live Demo
 
-![Fylo Landing Page Desktop Demo](./readme-images/screenshot.png "Desktop Demo")
+Live Site URL: [Fylo - Cloud Storage App](https://jessarthuro.github.io/fylo/)
